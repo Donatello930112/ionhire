@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Home</ion-title>
   </ion-navbar>
 
@@ -14,5 +14,10 @@
 
 
 <ion-content padding>
+  <p>Username: {{(profileData | async)?.username}}</p>
 
+  <p>First Name: {{(profileData | async)?.firstName}}</p>
+
+  <p>Last Name: {{(profileData | async)?.lastName}}</p>
+  <p>{{username}}</p>
 </ion-content>
